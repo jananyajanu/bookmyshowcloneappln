@@ -1,7 +1,17 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
-  return <div>React</div>;
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/Movie/:id" element={<MoviePage />} />
+      <Route path="/plays" element={<Plays />} />
+    </Routes>
+  );
 }
 
 export default App;

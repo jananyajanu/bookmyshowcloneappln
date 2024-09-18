@@ -22,4 +22,13 @@ PlayFilters filters.component.jsx
 Poster Poster.component.jsx
 posterSlider PosterSlider.component.jsx
 
-npx create-react-app .
+For React >>npx create-react-app .
+For CSS style-Tailwinds css >>npm install -D tailwindcss postcss autoprefixer >>npx tailwindcss init
+For React-carousel react-slick >>npm install react-slick >>npm install slick-carousel
+app.js>>import "slick-carousel/slick/slick.css"; >>import "slick-carousel/slick/slick-theme.css";
+
+For API's axios-npm >>npm i axios
+
+For UI's headless ui >>npm install @headlessui/react
+
+For Icons Recat Icons >>npm install react-icons
