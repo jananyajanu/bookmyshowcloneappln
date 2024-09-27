@@ -22,3 +22,24 @@ For UI's headless ui >>npm install @headlessui/react
 For Icons Recat Icons >>npm install react-icons
 
 rafce
+
+Using of themoviedb.org for the backend support
+https://www.themoviedb.org/settings/api/details
+singup->profile icon->sttings->api->create-> fill required info->submit->application key.
+
+json formatter for pretty printer of json file inchrome
+
+https://developer.themoviedb.org/reference/intro/getting-started
+
+In package.json
+to use api we use axios-to connect front and backend
+react for react app
+react-dom for routers
+react icon for icons
+react router-dom for routers
+scripts default
+react slick for slides
+react carousel for banner section
+web-vital ignore
+
+# UseEffect for api realted information

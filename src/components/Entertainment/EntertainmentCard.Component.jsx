@@ -16,22 +16,22 @@ const EntertainmentCard = (props) => {
 };
 
 const EntertainmentCardSlider = () => {
-  const EntertainmnetImage = [
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTI1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/workshops-collection-202007231330.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-OSBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/fitness-collection-2020081150.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MjArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/kids-collection-202007220710.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NDArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/comedy-shows-collection-202007220710.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NSBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/music-shows-collection-202007220710.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/esports-collection-202011150107.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-OSBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/self-improvement-collection-202007220710.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:w-300/cooking-collection-202007222211.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MSBFdmVudA%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/interactive-games-collection-202012041129.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/art-and-crafts-collection-202007220710.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NCBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/theatre-shows-collection-202012041128.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:w-300/adventure-collection-202010140844.png",
+  const EntertainmentImage = [
+    "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00364249-gysqjkrwnv-portrait.jpg",
+    "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00380018-vlvxmddfxg-portrait.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2EUS5rvdfrgJHn73Y7DP4CVhXcp3E8Z2xJOaVvXrxc5WCTJbGGBj9KDoIM8TjJvMvRAw&usqp=CAU",
+    "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-250,h-390/et00345114-pqtczlurjc-portrait.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY8vqrgfP-2Xohw8fRSeKGdhfUukIxGdxbPx-tofT_JJ2PRrPODL92iZaMDXUq1B6m664&usqp=CAU",
+    "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/namma-hudugaru-et00333229-1656934347.jpg",
+    "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00401439-xdtxcmtyux-portrait.jpg",
+    "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-250,h-390/et00326486-agcdjhhjdx-portrait.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9u9WvvkuFu8sJeSpBsXIkXUKfq-wrokbG3okuPNfSroZLZ_3jKjosxktFrQA82qUVoU&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HwiJhlu3oXzN77FHgO5wbKz_0qTvZeVTYw&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfroecz5vrBgHxJnS8yMjBtVoagZjH4vu2aQ&s",
   ];
   const settings = {
-    infinite: false,
+    infinite: true,
+    autoplay: 5,
     slidesToShow: 5,
     slidesToScroll: 4,
     intialSlide: 0,
@@ -63,11 +63,11 @@ const EntertainmentCardSlider = () => {
   return (
     <>
       <Slider {...settings}>
-        {EntertainmnetImage.map((image) => (
+        {EntertainmentImage.map((image) => (
           <EntertainmentCard src={image} />
         ))}
       </Slider>
     </>
   );
 };
-export default EntertainmentCard;
+export default EntertainmentCardSlider;
