@@ -10,17 +10,19 @@ import HeroCarousel from "../components/HeroCarousel/HeroCarousel.Component";
 import PosterSlider from "../components/PosterSlider/PosterSlider.Component";
 
 const HomePage = () => {
-  const [recomendedMovies, setRecomendedMovies] = useState([]);
+  const [recomendedMovies, setRecommendedMovies] = useState([]);
   const [premierMovies, setPremierMovies] = useState([]);
   const [onlineStreamEvents, setOnlineStreamEvents] = useState([]);
 
   useEffect(() => {
     const requestTopRatedMovies = async () => {
       const getTopRatedMovies = await axios.get(
-        "https://api.themoviedb.org/3/movie/top_rated"
+        "https://api.themoviedb.org/3/movie/top_rated?api_key=8614d698dbc96b02eae4c9eee2b2b842"
       );
+      setRecommendedMovies(getTopRatedMovies.data.results);
     };
-  });
+    requestTopRatedMovies();
+  }, []);
 
   return (
     <>
