@@ -24,7 +24,11 @@ const NavLg = () => {
       <div className="container flex mx-auto px-4 items-center justify-between">
         <div className="flex items-center w-1/2 gap-3">
           <div className="w-10 h-10">
-            <img src="" alt="logo" className="w-full h-full" />
+            <img
+              src="https://play-lh.googleusercontent.com/FPtxFPnbUNmOPvggNFaTUGPUr4DAb-djW6uWgG8lST76KTmZYko679Oh5g15gr4KAUZH"
+              alt="logo"
+              className="w-full h-full"
+            />
           </div>
           <div className="w-full flex items-center gap-3 bg-white px-3 py-1 rounded-md">
             <BiSearch />
@@ -32,6 +36,7 @@ const NavLg = () => {
               type="search"
               className="w-full bg-transparent border-none focus: outline-none"
               placeholder="Search for Movies, events, plays,sports and activities"
+              id="search"
             />
           </div>
         </div>
