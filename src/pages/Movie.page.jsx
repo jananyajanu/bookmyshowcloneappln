@@ -19,37 +19,21 @@ const MoviePage = () => {
   const [recommendedMovies, setRecommendedMovies] = useState([]);
 
   useEffect(() => {
-    const requestCast = async () => {
-      const getCast = await axios.get(`/movie/${id}/credits`);
-      setCast(getCast.data.cast);
-    };
-    requestCast();
-  }, [id]);
-
-  useEffect(() => {
-    const requestSimilarMovies = async () => {
-      const getSimilarMovies = await axios.get(`/movie/${id}/similar`);
-      setSimilarMovies(getSimilarMovies.data.results);
-    };
-    requestSimilarMovies();
-  }, [id]);
-
-  useEffect(() => {
-    const requestRecommendedMovies = async () => {
-      const getRecommendedMovies = await axios.get(
+    const fetchData = async () => {
+      const movieData = await axios.get(`/movie/${id}`);
+      const castData = await axios.get(`/movie/${id}/credits`);
+      const similarMoviesData = await axios.get(`/movie/${id}/similar`);
+      const recommendedMoviesData = await axios.get(
         `/movie/${id}/recommendations`
       );
-      setRecommendedMovies(getRecommendedMovies.data.results);
-    };
-    requestRecommendedMovies();
-  }, [id]);
 
-  useEffect(() => {
-    const requestMovie = async () => {
-      const getMovieDate = await axios.get(`/movie/${id}`);
-      setMovie(getMovieDate.data);
+      setMovie(movieData.data);
+      setCast(castData.data.cast);
+      setSimilarMovies(similarMoviesData.data.results);
+      setRecommendedMovies(recommendedMoviesData.data.results);
     };
-    requestMovie();
+
+    fetchData();
   }, [id]);
 
   const settingsCast = {
@@ -141,7 +125,7 @@ const MoviePage = () => {
               <div className="w-8 h-8">
                 <FaCcVisa className="w-full h-full" />
               </div>
-              <div className="flexflex-col items-start">
+              <div className="flex flex-col items-start">
                 <h3 className="text-gray-700 text-xl font-bold">
                   Visa Stream Offer
                 </h3>
@@ -205,7 +189,7 @@ const MoviePage = () => {
         <PosterSlider
           config={settings}
           title="BMS EXCLUSIVE MOVIES"
-          posters={recommendedMovies}
+          posters={similarMovies}
           isDark={false}
         />
       </div>

@@ -34,7 +34,7 @@ const NavLg = () => {
             <BiSearch />
             <input
               type="search"
-              className="w-full bg-transparent border-none focus: outline-none"
+              className="w-full bg-transparent border-none focus:outline-none"
               placeholder="Search for Movies, events, plays,sports and activities"
               id="search"
             />
