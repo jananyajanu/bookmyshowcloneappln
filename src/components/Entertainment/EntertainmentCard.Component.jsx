@@ -17,17 +17,17 @@ const EntertainmentCard = (props) => {
 
 const EntertainmentCardSlider = () => {
   const EntertainmentImage = [
-    "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00364249-gysqjkrwnv-portrait.jpg",
-    "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00380018-vlvxmddfxg-portrait.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2EUS5rvdfrgJHn73Y7DP4CVhXcp3E8Z2xJOaVvXrxc5WCTJbGGBj9KDoIM8TjJvMvRAw&usqp=CAU",
-    "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-250,h-390/et00345114-pqtczlurjc-portrait.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY8vqrgfP-2Xohw8fRSeKGdhfUukIxGdxbPx-tofT_JJ2PRrPODL92iZaMDXUq1B6m664&usqp=CAU",
-    "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/namma-hudugaru-et00333229-1656934347.jpg",
-    "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00401439-xdtxcmtyux-portrait.jpg",
-    "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-250,h-390/et00326486-agcdjhhjdx-portrait.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9u9WvvkuFu8sJeSpBsXIkXUKfq-wrokbG3okuPNfSroZLZ_3jKjosxktFrQA82qUVoU&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HwiJhlu3oXzN77FHgO5wbKz_0qTvZeVTYw&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfroecz5vrBgHxJnS8yMjBtVoagZjH4vu2aQ&s",
+    "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTc1KyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png",
+    "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/amusement-parks-banner-desktop-collection-202503251132.png",
+    "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/theatre-shows-collection-202211140440.png",
+    "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/kids-banner-desktop-collection-202503251132.png",
+    "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MjM1KyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/adventure-fun-collection-202211140440.png",
+    "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTE1KyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png",
+    "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MjMwKyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/arts-crafts-collection-202211140440.png",
+    "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MzYwKyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png",
+    "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/interactive-games-collection-202211140440.png",
+    "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MjArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/upskill-collection-202211140440.png",
+    "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/food-drinks-collection-202211140440.png",
   ];
   const settings = {
     infinite: true,
