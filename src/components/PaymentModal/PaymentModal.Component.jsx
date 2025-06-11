@@ -6,7 +6,7 @@ import {
   DialogPanel,
   DialogTitle,
 } from "@headlessui/react";
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 
 const PaymentModal = ({ setIsOpen, isOpen, price }) => {
   const closeModal = () => {

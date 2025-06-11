@@ -34,7 +34,7 @@ const MoviePage = () => {
     };
 
     fetchData();
-  }, [id]);
+  }, [id, setMovie]);
 
   const settingsCast = {
     infinite: false,
